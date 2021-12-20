@@ -12,6 +12,8 @@
 		0F753A5727704C280058BA6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F753A5627704C280058BA6E /* Assets.xcassets */; };
 		0F753A5A27704C280058BA6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F753A5827704C280058BA6E /* LaunchScreen.storyboard */; };
 		0F753A6227704D080058BA6E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F753A6127704D080058BA6E /* MainViewController.swift */; };
+		0F753A6527704E960058BA6E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 0F753A6427704E960058BA6E /* SnapKit */; };
+		0F753A6727704EC50058BA6E /* MainContentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F753A6627704EC50058BA6E /* MainContentsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,7 @@
 		0F753A5927704C280058BA6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0F753A5B27704C280058BA6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F753A6127704D080058BA6E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		0F753A6627704EC50058BA6E /* MainContentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContentsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F753A6527704E960058BA6E /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +61,7 @@
 				0F753A4D27704C270058BA6E /* AppDelegate.swift */,
 				0F753A4F27704C270058BA6E /* SceneDelegate.swift */,
 				0F753A6127704D080058BA6E /* MainViewController.swift */,
+				0F753A6627704EC50058BA6E /* MainContentsView.swift */,
 				0F753A5627704C280058BA6E /* Assets.xcassets */,
 				0F753A5827704C280058BA6E /* LaunchScreen.storyboard */,
 				0F753A5B27704C280058BA6E /* Info.plist */,
@@ -80,6 +85,9 @@
 			dependencies = (
 			);
 			name = UIScrollViewWithStackView;
+			packageProductDependencies = (
+				0F753A6427704E960058BA6E /* SnapKit */,
+			);
 			productName = UIScrollViewWithStackView;
 			productReference = 0F753A4A27704C270058BA6E /* UIScrollViewWithStackView.app */;
 			productType = "com.apple.product-type.application";
@@ -108,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 0F753A4127704C270058BA6E;
+			packageReferences = (
+				0F753A6327704E960058BA6E /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 0F753A4B27704C270058BA6E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,6 +148,7 @@
 				0F753A6227704D080058BA6E /* MainViewController.swift in Sources */,
 				0F753A4E27704C270058BA6E /* AppDelegate.swift in Sources */,
 				0F753A5027704C270058BA6E /* SceneDelegate.swift in Sources */,
+				0F753A6727704EC50058BA6E /* MainContentsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +360,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0F753A6327704E960058BA6E /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0F753A6427704E960058BA6E /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0F753A6327704E960058BA6E /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0F753A4227704C270058BA6E /* Project object */;
 }
